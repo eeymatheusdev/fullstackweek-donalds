@@ -5,7 +5,6 @@ declare global {
   var cachedPrisma: PrismaClient;
 }
 
-//Cria uma conexão cracheada com o prisma
 let prisma: PrismaClient;
 if (process.env.NODE_ENV === "production") {
   prisma = new PrismaClient();
